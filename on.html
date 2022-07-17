@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            transition: all 0.8s;
+        }
+        h1{
+            background-color: #000;
+            width: 500px;
+            height: 100px;
+            margin: 10px;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+        p{
+            background-color: #000;
+            color: #fff;
+            widows: 500px;
+            margin: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            border: 2px solid #191919;
+            margin: 10px;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #e7e7e7;
+            border: 1px solid #808080;
+        }
+        th{
+            padding:10px;
+            background-color: beige;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //  .on()>>
+            //  $("선택자").on('event',function (){ 명령내용 });
+           /* $("h1").on('mouseover',function(){
+                $("h1").css({
+                    color:'#f00',
+                    backgroundColor:'#00f'
+                });
+            });
+            $("h1").on('mouseout',function(){
+                $("h1").css({
+                    color:'#fff',
+                    backgroundColor:'#000'
+                });
+            });
+
+            $("p").on('mousedown',function(){
+                $("p").css({
+                    color:'#ff0',
+                    backgroundColor:'#00f'
+                });
+            });
+            $("p").on('mouseup',function(){
+                $("p").css({
+                    color:'#fff',
+                    backgroundColor:'#000'
+                });
+            });
+            */
+           $("td").on('click',function(){
+            $("td").css({
+                backgroundColor:'#191919',
+                color:'#ccc',
+                fontSize:'10px'
+            });
+           });
+           $("td").on('dblclick',function(){
+            $("td").css({
+                backgroundColor:'#e7e7e7',
+                color:'#000',
+                fontSize:'14px'
+            });
+           });
+
+           $("h1").on('click',function(){
+            $("p").css({
+                color:'#ccc',
+                backgroundColor:'#777'
+            });
+           });
+           
+            ///////////////////////////
+        });
+    </script>
+</head>
+<body>
+    <h1>.on()</h1>
+    <p>:특정사건이 발생하는 시점에 실행할 명령을 설정하는 메서드
+        (특정사건 = 이벤트)
+    </p>
+    <!-- 이벤트 종류 -->
+    <!-- 15줄 2칸 테이블 생성 >> 첫번째 테이블헤드 -->
+    <table>
+        <tr>
+            <th>이벤트 종류</th>
+            <th>이벤트 설명</th>
+        </tr>
+        <tr>
+            <td>mouseover</td>
+            <td>마우스포인터를 올릴때</td>
+        </tr>
+        <tr>
+            <td>mouseout</td>
+            <td>마우스 포인터르 벗어날때</td>
+        </tr>
+        <tr>
+            <td>mousedown</td>
+            <td>마우스포인터를 올려놓은 상태에서 해당요소를 클릭할때 </td>
+        </tr>
+        <tr>
+            <td>mouseup</td>
+            <td>마우스포인터르르 올려놓은 상태에서 해당요소를 클릭했다가 땔때</td>
+        </tr>
+        <tr>
+            <td>mousemove</td>
+            <td>마우스포인터를 움직일때</td>
+        </tr>
+        <tr>
+            <td>chlick</td>
+            <td>요소를 클릭했을때</td>
+        </tr>
+        <tr>
+            <td>dblclick</td>
+            <td>요소를 더블클릭할때</td>
+        </tr>
+        <tr>
+            <td>keydown</td>
+            <td>요소에 초점을 맞춘 상태에서 키보드의 키를 눌러놓았을때</td>
+        </tr>
+        <tr>
+            <td>keyup</td>
+            <td>요소에 초점을 맞춘 상태에서 키보드의 키를 땔때</td>
+        </tr>
+        <tr>
+            <td>focus</td>
+            <td>요소에 포커스가 일치 했을때(포커스가 있는 요소만 input,select...)</td>
+        </tr>
+        <tr>
+            <td>blur</td>
+            <td>요소에 포커스가 잃어버렸을때 (포커스가 있는 요소만 input,select...)</td>
+        </tr>
+        <tr>
+            <td>change</td>
+            <td>입력내용이 변경되었을때 (textarea요소,input,select..)</td>
+        </tr>
+        <tr>
+            <td>resize</td>
+            <td>요소의 크기를 다시 설정했을떄</td>
+        </tr>
+        <tr>
+            <td>scroll</td>
+            <td>요소를 스크롤했을때</td>
+        </tr>
+    </table>
+</body>
+</html>
+

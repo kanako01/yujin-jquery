@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 제이쿼리test</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('header').css({
+            width:'100%',
+            height:'100px',
+            display:'flex',
+            justifyContent:'space-between',
+           });
+           $('.left').css({
+            margin:'30px'
+           });
+           $('ul').css({
+            height:'44px',
+            borderRight:'1px solid #333',
+            display:'inline-block',
+            lineHeight:'44px'
+           });
+           $('ul>li').css({
+            float:'left',
+            margin:'20px',
+           });
+           $('ul>li:nth-child(3)').css({
+            paddingRight:'20px',
+            borderRight:'1px solid #333'
+           });
+           $('main').css({
+            width:'100%',
+            height:'100%'
+           });
+           $('.box').css({
+            width:'1200px',
+            height:'50%',
+            backgroundColor:'#fff',
+            margin:'200px auto'
+           });
+           $('.box>img').css({
+            float:'left'
+           });
+           $('.line').css({
+            width:'2px',
+            height:'400px',
+            backgroundColor:'#333',
+            float:'left',
+            display:'block',
+            margin:'100px 285px'
+
+           });
+           $('.con').css({
+            float:'right',
+            width:'164px'
+           });
+           $('.con>img').css({
+            float:'left',
+            marginRight:'30px'
+           });
+           $('.con>img:last-child').css({
+            marginRight:'0'
+           });
+           
+            //////////////////
+        });
+        </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        body{
+            z-index: 99;   
+            background-color: #f7f1e3 ;
+        }
+        li{
+            list-style: none;
+        }
+       /* header{
+            width:100% ;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .left>img{
+            margin: 30px;
+        }
+        header ul{
+            display: inline-block;
+            margin: 30px;
+        }
+        header ul>li{
+            float: left;
+            padding: 20px;
+        }
+        ul li>.ul-line{
+            width: 1px;
+            height: 50px;
+            background-color: #333;
+
+        }
+        ul li:nth-child(1){
+            margin-top: 15px;
+            color: rgb(138, 136, 136);
+        }
+        
+        main{
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 1200px;
+            height: 500px;
+            overflow: hidden;
+            margin: 200px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box>img{
+            width: 30%;
+            height: 50%;
+         }
+         main .line{
+            width: 2px;
+            height: 400px;
+            background-color: rgb(95, 93, 93);
+            margin-top: 100px;
+         }
+         .con>img{
+            float: left;
+            display: block;
+         }
+         .con>img:nth-child(2){
+            margin: 0 30px;
+         }*/
+     
+
+
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="left">
+            <img src="h_menu.png" alt="/">
+        </div>
+        <ul>
+            <li>gnb</li>
+            <li>메뉴 열기</li>
+            <li>예약문의 033.673.9900</li>
+            <li><img src="h_icon.png" alt="/"></li>
+        </ul>
+            
+    </header>
+    <!--//header-->
+
+
+    <!--main-->
+    <main>
+        <div class="box">
+            <img src="bg.jpg" alt="/">
+            <div class="line"></div>
+            <div class="con">
+                <img src="index_sec2_txt01.png" alt="/">
+                <img src="index_sec2_txt02.png" alt="/">
+                <img src="index_sec2_tit01.png" alt="/">
+            </div>
+        </div>
+    </main>
+    <!--//main-->
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: beige;
+        }
+        img{
+            display: block;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header").css({
+                width:'100%',
+                height:'100px',
+                overflow:'hidden',
+                
+            });
+            $("header>a").css({
+                float:'left',
+                width:'46px',
+                height:'38px',
+                display:'block',
+                margin:'31px'
+            });
+            $("nav").css({
+                float:'right',
+                height:'44px',
+                margin:'28px'
+            
+            });
+            $("nav>ul").css({
+                float:'left',
+                lineHeight:'44px',
+                borderRight:'1px solid #808080',
+                marginRight:'22px'
+            });
+            $("nav>ul li").css({
+                listStyle:'none',
+                float:'left',
+                padding:'0px 10px',
+                lineHeight:'44px'
+            });
+            $("section").css({
+                width:'1200px',
+                margin:'200px auto',
+                overflow:"hidden",
+               
+            });
+            $("section>img").css({
+                float:'left'
+            });
+            $("section>span").css({
+                display:'block',
+                width:'2px',
+                height:'400px',
+                float:'left',
+                backgroundColor:'#191919',
+                margin:'100px 285px'
+            });
+            $("section>.title").css({
+                float:'right',
+                width:'164px'
+
+            });
+            $("section>.title>img").css({
+                float:'left',
+                marginRight:'30px'
+            });
+            $("section>.title>img:last-child").css({
+                marginRight:'0'
+            });
+
+
+
+            //////////////
+        });
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="#"><img src="h_menu.png" alt="/"></a>
+        <nav>
+            <ul>
+                <li>gnb</li>
+                <li>메뉴</li>
+                <li>열기</li>
+                <li>예약문의</li>
+            </ul>
+            <img src="h_icon.png" alt="/">
+        </nav>
+    </header>
+    <!--//header-->
+
+    <!--section-->
+    <section>
+        <img src="bg.jpg" alt="/">
+        <span></span>
+        <div class="title">
+            <img src="index_sec2_txt01.png" alt="">
+            <img src="index_sec2_txt02.png" alt="">
+            <img src="index_sec2_tit01.png" alt="">
+
+        </div>
+    </section>
+    <!--//section-->
+</body>
+</html>
